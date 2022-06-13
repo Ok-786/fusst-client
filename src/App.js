@@ -27,7 +27,8 @@ function App() {
     e.preventDefault();
 
     try {
-      const res = await fetch("https://fusst-server.herokuapp.com/company", {
+      // const res = await fetch("http://localhost:7000/api/company", {
+      const res = await fetch("aaa/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
@@ -41,7 +42,7 @@ function App() {
     } catch (err) {
       console.log(err);
     }
-    setForm(initForm);
+    // setForm(initForm);
   };
 
   const onChangeHandler = (e) => {
